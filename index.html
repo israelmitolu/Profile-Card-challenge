@@ -1,13 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="assets/css/styles.css">
-        <title>CSS Card challenge by Israel Oyetunji</title>
-    </head>
-    <body>
-    
-    
-    </body>
-</html>    
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>CSS Card challenge by Israel Mitolu #Frontend Mentor #SideHustle</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body{
+      max-width: 100%;
+      min-height: 100vh;
+      font-family: monospace;
+    }
+    .container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+      margin: auto;
+      }    
+    .card{
+      width: 20rem;
+      height: 20rem;
+      border-radius: 16px;
+      background: transparent;
+      box-shadow: 5px 5px 16px #bebebe,
+                  -5px -5px 16px #ffffff;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+    }
+    span{
+      color: #eee;
+      font-style: italic;
+    }
+    img{
+      display: none;
+    }
+    .row1{
+      background-image: url('images/bg-pattern-top.svg');
+    }
+    .row2{
+      background-image: url('images/bg-pattern-card.svg');
+    }
+    .row3{
+      background-image: url('images/bg-pattern-bottom.svg');
+    }
+
+
+
+
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="container">  
+    <div class="card">
+      <img src="images/image-victor.jpg" alt="profile image">
+      <div class="row1">
+      </div>
+      <div class="row2">
+        <h3>Israel Oyetunji <span>20</span></h3>
+        <h4>Nigeria <!---Ad  Nigeria flag emoji here--></h4>
+      </div>
+      <div class="row3">
+        <div class="col1">
+          <h3><b>54K</b></h3>
+          <p>Followers</p>
+        </div>
+        <div class="col2">
+          <h3><b>155</b></h3>
+          <p>Retweets</p>
+        </div>
+        <div class="col3">
+          <h3><b>202</b></h3>
+          <p>Following</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
